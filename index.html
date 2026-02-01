@@ -175,9 +175,6 @@ body {
 
 
 
-
-
-
 /* SECTIONS COLOR */
 .section.highlight,
 .section.how-it-works,
@@ -423,16 +420,17 @@ footer{
 
 
 /* RESPONSIVO */
-/* RESPONSIVO */
 @media (max-width:768px){
 
   .hero{
-    min-height: 100svh;        /* evita barras azuis */
-    background-position: center top; /* não corta a imagem importante */
+    min-height: 100svh;
+    background-position: center top;
+    align-items: flex-start;   /* tira do centro */
+    padding-top: 140px;        /* desce o conteúdo */
   }
 
   .hero-box{
-    padding: 2.8rem 1.2rem;   /* espaçamento equilibrado no mobile */
+    padding-top: 40px;
   }
 
   .hero-box h1{
@@ -445,6 +443,7 @@ footer{
   }
 
 }
+
 /* ESTRELAS DOS DEPOIMENTOS */
 .stars{
   color: #FFD700; /* amarelo dourado */
@@ -673,10 +672,9 @@ e Vigilância Sanitária.
     Agenda com vagas limitadas para atendimento exclusivo.
   </p>
 
-  <a class="btn btn-pulse" href="https://wa.me/5511967305327">
-  Falar agora no WhatsApp
-</a>
-
+  <a class="btn" href="https://wa.me/5511967305327">
+    Falar agora no WhatsApp
+  </a>
 </section>
 
 <section class="legal-note">
